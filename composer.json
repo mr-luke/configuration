@@ -1,0 +1,32 @@
+{
+    "name": "mr-luke/configuration",
+    "description": "Dot notation array host configuration package.",
+    "keywords": ["configuration", "host", "array", "php"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Łukasz Sitnicki",
+            "email": "lukasz.sitnicki@gmail.com"
+        }
+    ],
+    "required": {
+        "php": ">=7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0",
+        "mockery/mockery": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mrluke\\Configuration\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
