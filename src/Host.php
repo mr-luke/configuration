@@ -4,7 +4,7 @@ namespace Mrluke\Configuration;
 
 use InvalidArgumentException;
 use Mrluke\Configuration\Contracts\ArrayHost;
-use Mrluke\Configuration\Contracts\Schema;
+use Mrluke\Configuration\Contracts\Schema as SchemaContract;
 
 /**
  * Configuration is a wrapper class provides array as object.
@@ -24,7 +24,7 @@ final class Host implements ArrayHost
      */
     protected $config;
 
-    function __construct(array $insert, Schema $schema = null)
+    function __construct(array $insert, SchemaContract $schema = null)
     {
         if ($schema) {
             // Check if given insert Configuration
