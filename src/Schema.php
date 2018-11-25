@@ -64,7 +64,7 @@ final class Schema implements SchemaContract
             }
         }
 
-        return $result['status'];
+        return $result['status'] ?? true;
     }
 
     /**
