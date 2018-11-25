@@ -1,5 +1,8 @@
 # Configuration Host
 
+[![Build Status](https://scrutinizer-ci.com/g/mr-luke/configuration/badges/build.png?b=master)](https://scrutinizer-ci.com/g/mr-luke/configuration/build-status/master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mr-luke/configuration/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mr-luke/configuration/?branch=master)
+
 This package provides array host (wrapper) package that supports dot notation access and schema validation.
 
 * [Getting Started](#getting-started)
