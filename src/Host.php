@@ -63,6 +63,16 @@ final class Host implements ArrayHost
     }
 
     /**
+     * Return array of configuration.
+     *
+     * @return array
+     */
+    public function toArray(): array
+    {
+        return (array) $this->config;
+    }
+
+    /**
      * Magic getter.
      *
      * @param  string $key
