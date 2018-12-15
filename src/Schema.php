@@ -76,11 +76,9 @@ final class Schema implements SchemaContract
      */
     public static function createFromFile(string $path, bool $json = false): Schema
     {
-        static::filesExists($path);
+        static::fileExists($path);
 
-        $schema = include $path;
-
-        !$json ?: $schema = json_decode($schema);
+        $schema = $json ? json_decode(file_get_contents($path), true) : include $path;
 
         if (!is_array($schema)) {
             throw new InvalidArgumentException(

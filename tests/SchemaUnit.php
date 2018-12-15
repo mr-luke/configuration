@@ -85,4 +85,26 @@ class SchemaUnit extends TestCase
             'second' => null
         ]);
     }
+
+    public function testLoadArrayFromFile()
+    {
+        $file = __DIR__.'/../testArray.php';
+
+        $schema = Schema::createFromFile($file);
+
+        $this->assertTrue($schema->check([
+            'first' => 10
+        ]));
+    }
+
+    public function testLoadJsonFromFile()
+    {
+        $file = __DIR__.'/../testJson.json';
+
+        $schema = Schema::createFromFile($file, true);
+
+        $this->assertTrue($schema->check([
+            'first' => 10
+        ]));
+    }
 }
