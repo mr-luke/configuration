@@ -75,6 +75,8 @@ Create new instance of `Mrluke\Configuration\Schema`:
 $schema = new Schema(array $instruction);
 ```
 
+Note! From v1.2.0 you can create `Schema` by static method `createFromFile(string $path, bool $json = false)`.
+
 ### Step Three
 
 Create new instance of `Mrluke\Configuration\Host` with `Schema` as a dependency and your `$configArray` is automatically validated.
