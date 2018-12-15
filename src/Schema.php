@@ -68,6 +68,28 @@ final class Schema implements SchemaContract
     }
 
     /**
+     * Create new Schema instance based on file.
+     *
+     * @param  string $path
+     * @param  bool   $json
+     * @return Mrluke\Configuration\Schema
+     */
+    public static function createFromFile(string $path, bool $json = false): Schema
+    {
+        static::fileExists($path);
+
+        $schema = $json ? json_decode(file_get_contents($path), true) : include $path;
+
+        if (!is_array($schema)) {
+            throw new InvalidArgumentException(
+                '[createFromFile] method requires file that return a php array or json.'
+            );
+        }
+
+        return new static($schema);
+    }
+
+    /**
      * Determine if given value is type boolean.
      *
      * @param  mixed $value
@@ -131,6 +153,23 @@ final class Schema implements SchemaContract
     private function checkRuleString($value): bool
     {
         return !(is_bool($value) || is_numeric($value));
+    }
+
+    /**
+     * Check if file of given path exists.
+     *
+     * @param  string $path
+     * @return void
+     *
+     * @throws \InvalidArgumentException
+     */
+    private static function fileExists(string $path): void
+    {
+        if (!file_exists($path)) {
+            throw new InvalidArgumentException(
+                sprintf('Following file %s does not exists.', $path)
+            );
+        }
     }
 
     /**
