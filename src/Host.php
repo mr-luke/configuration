@@ -10,9 +10,7 @@ use Mrluke\Configuration\Contracts\Schema as SchemaContract;
  * Configuration is a wrapper class provides array as object.
  *
  * @author    Łukasz Sitnicki (mr-luke)
- *
  * @link      http://github.com/mr-luke/configuration
- *
  * @license   MIT
  */
 final class Host implements ArrayHost
