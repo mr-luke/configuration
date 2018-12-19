@@ -9,9 +9,7 @@ use Mrluke\Configuration\Contracts\Schema as SchemaContract;
  * Schema is a class that provide check for array.
  *
  * @author    Łukasz Sitnicki (mr-luke)
- *
  * @link      http://github.com/mr-luke/configuration
- *
  * @license   MIT
  */
 final class Schema implements SchemaContract
