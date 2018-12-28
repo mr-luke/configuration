@@ -139,7 +139,7 @@ final class Schema implements SchemaContract
      */
     private function checkRuleRequired($value): bool
     {
-        return !empty($value);
+        return !is_null($value);
     }
 
     /**
