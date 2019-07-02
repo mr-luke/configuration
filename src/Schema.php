@@ -196,6 +196,7 @@ final class Schema implements SchemaContract
      */
     private function processRules(string $key, array $rules, array $insert): array
     {
+        $message = null;
         $status = true;
 
         if (!isset($insert[$key])) {
