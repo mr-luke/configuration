@@ -1,6 +1,7 @@
 # Configuration Host
 
 [![Latest Stable Version](https://poser.pugx.org/mr-luke/configuration/v/stable)](https://packagist.org/packages/mr-luke/configuration)
+[![Total Downloads](https://poser.pugx.org/mr-luke/configuration/downloads)](https://packagist.org/packages/mr-luke/configuration)
 [![License](https://poser.pugx.org/mr-luke/configuration/license)](https://packagist.org/packages/mr-luke/configuration)
 [![Build Status](https://scrutinizer-ci.com/g/mr-luke/configuration/badges/build.png?b=master)](https://scrutinizer-ci.com/g/mr-luke/configuration/build-status/master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mr-luke/configuration/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mr-luke/configuration/?branch=master)
