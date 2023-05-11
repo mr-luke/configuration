@@ -4,14 +4,16 @@
     "keywords": ["configuration", "host", "array", "php"],
     "type": "library",
     "license": "MIT",
+    "version": "1.3.4",
     "authors": [
         {
             "name": "Łukasz Sitnicki",
             "email": "lukasz.sitnicki@gmail.com"
         }
     ],
-    "required": {
-        "php": ">=7.1"
+    "require": {
+        "php": ">=7.1",
+        "ext-json": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.0",

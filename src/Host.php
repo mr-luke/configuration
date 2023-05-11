@@ -2,7 +2,6 @@
 
 namespace Mrluke\Configuration;
 
-use InvalidArgumentException;
 use Mrluke\Configuration\Contracts\ArrayHost;
 use Mrluke\Configuration\Contracts\Schema as SchemaContract;
 
@@ -10,8 +9,8 @@ use Mrluke\Configuration\Contracts\Schema as SchemaContract;
  * Configuration is a wrapper class provides array as object.
  *
  * @author    Łukasz Sitnicki (mr-luke)
- * @link      http://github.com/mr-luke/configuration
  * @license   MIT
+ * @link      http://github.com/mr-luke/configuration
  */
 final class Host implements ArrayHost
 {
@@ -22,7 +21,7 @@ final class Host implements ArrayHost
      */
     protected $config;
 
-    function __construct(array $insert, SchemaContract $schema = null)
+    public function __construct(array $insert, SchemaContract $schema = null)
     {
         if ($schema) {
             // Check if given insert Configuration
@@ -36,8 +35,8 @@ final class Host implements ArrayHost
     /**
      * Return given key from array.
      *
-     * @param  string $key
-     * @param  mixed  $default
+     * @param string $key
+     * @param mixed  $default
      * @return mixed
      */
     public function get(string $key, $default = null)
@@ -50,14 +49,14 @@ final class Host implements ArrayHost
     /**
      * Return of givent key is present.
      *
-     * @param  string $key
+     * @param string $key
      * @return boolean
      */
     public function has(string $key): bool
     {
         $result = $this->iterateConfig($key);
 
-        return !($result === null);
+        return $result !== null;
     }
 
     /**
@@ -67,24 +66,24 @@ final class Host implements ArrayHost
      */
     public function toArray(): array
     {
-        return (array) $this->config;
+        return (array)$this->config;
     }
 
     /**
      * Magic getter.
      *
-     * @param  string $key
+     * @param string $key
      * @return mixed
      */
     public function __get(string $key)
     {
-        return $this->get($key, null);
+        return $this->get($key);
     }
 
     /**
      * Iterate through configuration.
      *
-     * @param  string $key
+     * @param string $key
      * @return mixed
      */
     protected function iterateConfig(string $key)

@@ -28,7 +28,7 @@ final class Schema implements SchemaContract
      */
     private $schema;
 
-    function __construct(array $schema)
+    public function __construct(array $schema)
     {
         if (in_array(null, $schema)) {
             throw new InvalidArgumentException(
@@ -70,13 +70,13 @@ final class Schema implements SchemaContract
      *
      * @param  string $path
      * @param  bool   $json
-     * @return Mrluke\Configuration\Schema
+     * @return \Mrluke\Configuration\Schema
      */
     public static function createFromFile(string $path, bool $json = false): Schema
     {
-        static::fileExists($path);
+        Schema::fileExists($path);
 
-        $schema = $json ? json_decode(file_get_contents($path), true) : include $path;
+        $schema = $json ? json_decode(file_get_contents($path), true) : include_once $path;
 
         if (!is_array($schema)) {
             throw new InvalidArgumentException(
@@ -84,7 +84,7 @@ final class Schema implements SchemaContract
             );
         }
 
-        return new static($schema);
+        return new Schema($schema);
     }
 
     /**
