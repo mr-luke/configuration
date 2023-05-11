@@ -3,8 +3,9 @@
 [![Latest Stable Version](https://poser.pugx.org/mr-luke/configuration/v/stable)](https://packagist.org/packages/mr-luke/configuration)
 [![Total Downloads](https://poser.pugx.org/mr-luke/configuration/downloads)](https://packagist.org/packages/mr-luke/configuration)
 [![License](https://poser.pugx.org/mr-luke/configuration/license)](https://packagist.org/packages/mr-luke/configuration)
-[![Build Status](https://scrutinizer-ci.com/g/mr-luke/configuration/badges/build.png?b=master)](https://scrutinizer-ci.com/g/mr-luke/configuration/build-status/master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/mr-luke/configuration/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mr-luke/configuration/?branch=master)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=mr-luke_configuration&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=mr-luke_configuration)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=mr-luke_configuration&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=mr-luke_configuration)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=mr-luke_configuration&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=mr-luke_configuration)
 
 This package provides array host (wrapper) package that supports dot notation access and schema validation.
 
