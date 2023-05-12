@@ -2,12 +2,10 @@ name: Run Testsuite
 
 on:
   push:
-    branches:
-      - 'master'
+    branches: [master]
   pull_request:
     types: [opened, reopened, synchronize]
-    branches:
-      - 'master'
+    branches: [master]
 
 jobs:
   run-phpunit:
