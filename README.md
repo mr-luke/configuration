@@ -3,6 +3,8 @@
 [![Latest Stable Version](https://poser.pugx.org/mr-luke/configuration/v/stable)](https://packagist.org/packages/mr-luke/configuration)
 [![Total Downloads](https://poser.pugx.org/mr-luke/configuration/downloads)](https://packagist.org/packages/mr-luke/configuration)
 [![License](https://poser.pugx.org/mr-luke/configuration/license)](https://packagist.org/packages/mr-luke/configuration)
+
+![Tests Workflow](https://github.com/mr-luke/configuration/actions/workflows/run-testsuit.yaml/badge.svg)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=mr-luke_configuration&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=mr-luke_configuration)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=mr-luke_configuration&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=mr-luke_configuration)
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=mr-luke_configuration&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=mr-luke_configuration)
